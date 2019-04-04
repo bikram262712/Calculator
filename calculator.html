@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+	<style type="text/css">
+		#div1
+		{
+			width: 300px;
+			height: 500px;
+			background-color: #ffffff;
+			border-top: 20px groove #009900;
+			border-bottom: 20px ridge #33ff33;
+			margin: 0 auto;
+			box-shadow: 0px 0px 5px #33331a;
+			border-radius: 35px;
+		}
+input[type=text]
+{
+	margin: 12px;
+	height: 50px;
+	box-sizing: border-box;
+	border-radius: 15px;
+	outline: none;
+}
+input[type=text]::placeholder{
+	font-size: 15px;
+	text-align: center;
+	font-weight: bold;
+	font-family: Footlight MT Light;
+}
+input[type=button]
+{
+	width: 50px;
+	height: 40px;
+	margin: 15px 10px;
+	border-radius: 5px;
+
+
+}
+
+	</style>
+</head>
+<body>
+	<form name="cal">
+<div id="div1">
+	<input type="text" size="35" name="result" placeholder="Developed by BIKRAM SAHA" >
+	<br><br>
+	
+	<input type="button" value="1" onclick="document.cal.result.value+=1">
+	<input type="button" value="2" onclick="document.cal.result.value+=2">
+	<input type="button" value="3" onclick="document.cal.result.value+=3">
+	<input type="button" value="4" onclick="document.cal.result.value+=4">
+	<br><br>
+	<input type="button" value="5" onclick="document.cal.result.value+=5">
+	<input type="button" value="6" onclick="document.cal.result.value+=6">
+	<input type="button" value="7" onclick="document.cal.result.value+=7">
+	<input type="button" value="8" onclick="document.cal.result.value+=8">
+	<br><br>
+	<input type="button" value="9" onclick="document.cal.result.value+=9">
+	<input type="button" value="0" onclick="document.cal.result.value+=0">
+	<input type="button" value="." onclick="document.cal.result.value+='.'">
+	<input type="button" value="c" onclick="document.cal.result.value=''">
+	<br><br>
+	<input type="button" value="+" onclick="document.cal.result.value+='+'">
+	<input type="button" value="-" onclick="document.cal.result.value+='-'">
+	<input type="button" value="*" onclick="document.cal.result.value+='*'">
+	<input type="button" value="/" onclick="document.cal.result.value+='/'">
+	<br><br>
+	<input type="button" value="=" style="margin: 5px 24px; width: 250px;border-radius: 20px;" onclick="document.cal.result.value=eval(document.cal.result.value)">
+
+
+
+
+</div>
+</form>
+</body>
+</html>

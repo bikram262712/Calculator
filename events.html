@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Log in form</title>
+		<script type="text/javascript">
+			function validate(){
+		var username = document.forms["login"]["uname"].value;
+		if (username=="")
+		 {
+			alert("please enter your name");
+			return false;
+		}
+
+		var passwords = document.forms["login"]["passwd"].value;
+		if (passwords=="")
+		 {
+			alert("please enter your password");
+			return false;
+		}
+
+		var emails = document.forms["login"]["email"].value;
+		if (emails=="")
+		 {
+			alert("please enter your E-mail address");
+			return false;
+		}
+		else
+		{
+			return true;
+		}
+	}
+	</script>
+	<style type="text/css">
+
+			h1{
+				color: #002966;
+				margin-top: 50px;
+				animation: headinganimate 0.5s linear infinite;
+
+			}
+		form
+		{
+			border: 2px solid black;
+			width: 250px;
+			padding-left: 30px;	
+			box-shadow: 2px 2px 4px black;
+			margin: 15px auto;
+			margin-top: 70px;
+			padding-bottom: 20px;
+			background-color:#6666ff;
+			
+
+
+		}
+		form:hover
+		{
+			color: #ccccff;
+		}
+@keyframes headinganimate
+{
+	from{color: #002966; }
+	to{color:#ccccff ;}
+}
+
+	</style>
+
+</head>
+<body bgcolor="#9494b8">
+	<h1 align="center" >Log In</h1>
+	<form action="C:\Users\HP\Documents\my file\HTML\sample\thanks.html" method="post" name="login" onsubmit="return validate()">
+		<b><p>Name:</p></b>
+		<input type="text" placeholder="Enter your name" id="name" name="uname" autocomplete="off">
+		
+		<b><p>Password:</p></b>
+			<input type="Password" placeholder="Enter your password" id="pass" name="passwd">
+		<b><p>E-mail:</p></b>
+			<textarea placeholder="Enter your email address" id="email" name="email"></textarea><br><br>
+		<input type="submit" value="log in">
+		<input type="reset" value="Reset">
+		</form>
+
+
+</body>
+</html>
